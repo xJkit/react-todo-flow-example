@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import '../styles/Header.css';
+import styles from '../styles/Header.css';
 
 type Props = {
   title: number,
@@ -9,7 +9,7 @@ type Props = {
 
 const Header = (props: Props) => {
   return (
-    <div className="header">{props.title}</div>
+    <div className={styles.header}>{props.title}</div>
   )
 }
 
